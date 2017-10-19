@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+body
+{
+    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif; /* フォントの種類 */
+    font-size: 1.4rem; /* フォントサイズ */
+    line-height: 1.6; /* 行間 */
+
+    letter-spacing: .1em;　/* 文字間隔 */
+
+    color: #1B60CA; /* 文字色 */
+    background-color: #FBFDF6; /* 背景色 */
+}
+
+.photo {
+  background-image: url("http://putiya.com/img/title/animal/animal_zoo01/animal_zoo_1b.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+h2{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+}
+
+.box {
+    background-color: #ddd;
+    flex: 1;
+    margin: 10px;
+}
+
+.box h3{
+    background-color: #ccc;
+}
+
+#contact{
+    text-align: center;
+}
+
+#contact a{
+    background-color: #0bd;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+@media(max-width:768px){
+    .photo{
+        height:250px;
+    }
+    
+    .container{
+        flex-direction: column;
+    }
+}
